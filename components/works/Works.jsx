@@ -30,8 +30,6 @@ const Works = () => {
     handlePortfolioData(id);
   };
 
-  const [data, setData] = useState(portfolioData);
-
   return (
     <>
       <Masonry
@@ -39,7 +37,7 @@ const Works = () => {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {data.map((item) => (
+        {portfolioData.map((item) => (
           <div
             className="rounded-lg p-6 dark:border-[2px] border-[#212425]"
             style={{
@@ -91,7 +89,7 @@ const Works = () => {
                 </p>
                 <p className="dark:text-white flex items-center text-[15px]  sm:text-lg ">
                   <FiCode className="text-lg mr-2 hidden sm:block " />
-                  Langages :&nbsp;
+                  Framework :&nbsp;
                   <span className="font-medium ">{singleData?.langages}</span>
                 </p>
               </div>
