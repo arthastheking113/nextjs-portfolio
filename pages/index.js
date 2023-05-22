@@ -1,18 +1,42 @@
+import dynamic from "next/dynamic";
 import Seo from "../components/seo/Seo";
 import Intro from "../components/about/Intro";
 import SidebarInfo from "../components/about/SidebarInfo";
 import HeaderNavigation from "../components/header/HeaderNavigation";
 import Header from "../components/header/Header";
-import Service from "../components/service/Service";
-import Footer from "../components/footer/Footer";
-import ScrollToTop from "../components/footer/ScrollToTop";
-import ResumeCardTwo from "../components/Resume/ResumeCard";
-import Skills from "../components/skills/Skills";
-import Address from "../components/contact/Address";
-import Works from "../components/works/Works";
-import ContactForm from "../components/contact/ContactForm";
 
 const MainRoot = () => {
+  const Service = dynamic(() => import("../components/service/Service"), {
+    ssr: false,
+  });
+  const ResumeCardTwo = dynamic(() => import("../components/Resume/ResumeCard"), {
+    ssr: false,
+  });
+  
+  const Skills = dynamic(() => import("../components/skills/Skills"), {
+    ssr: false,
+  });
+  
+  const Works = dynamic(() => import("../components/works/Works"), {
+    ssr: false,
+  });
+  
+  const Address = dynamic(() => import("../components/contact/Address"), {
+    ssr: false,
+  });
+  
+  const Footer = dynamic(() => import("../components/footer/Footer"), {
+    ssr: false,
+  });
+  
+  const ContactForm = dynamic(() => import("../components/contact/ContactForm"), {
+    ssr: false,
+  });
+  
+  const ScrollToTop = dynamic(() => import("../components/footer/ScrollToTop"), {
+    ssr: false,
+  });
+  
   return (
     <section className="bg-homeBg min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark:bg-homeTwoBg-dark  md:pb-16 w-full">
       <Seo />
