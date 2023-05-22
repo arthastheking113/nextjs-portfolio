@@ -5,6 +5,7 @@ import HeaderNavigation from "../components/header/HeaderNavigation";
 import Header from "../components/header/Header";
 import Service from "../components/service/Service";
 import Footer from "../components/footer/Footer";
+import ScrollToTop from "../components/footer/ScrollToTop";
 import ResumeCardTwo from "../components/Resume/ResumeCard";
 import Skills from "../components/skills/Skills";
 import Address from "../components/contact/Address";
@@ -91,6 +92,7 @@ const MainRoot = () => {
         </div>
       </div>
       {/* End main continer */}
+      <ScrollToTop />
     </section>
   );
 };
