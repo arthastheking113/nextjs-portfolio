@@ -4,6 +4,9 @@ import { useTheme } from "next-themes";
 export default function DarkMode() {
   const { theme, setTheme } = useTheme();
 
+  if (theme === undefined || theme === "system") {
+    setTheme("dark");
+  }
   // toggle of dark & light mode
   const toggle = () => {
     if (theme === "light") setTheme("dark");
