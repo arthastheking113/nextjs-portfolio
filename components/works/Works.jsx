@@ -34,7 +34,6 @@ const Works = () => {
 
   return (
     <>
-      {/* Start portfolio items */}
       <Masonry
         breakpointCols={breakpointColumnsObj}
         className="my-masonry-grid"
@@ -68,9 +67,7 @@ const Works = () => {
           </div>
         ))}
       </Masonry>
-      {/* End portfolio items */}
 
-      {/* Start Modal for portfolio items */}
       <Modal
         isOpen={isOpen}
         onRequestClose={() => setIsOpen(false)}
@@ -78,7 +75,6 @@ const Works = () => {
       >
         <div className=" w-full md:w-10/12 flex items-center   lg:w-[850px] bg-white dark:bg-[#323232] mx-auto rounded-xl p-4 md:p-8 absolute left-1/2 top-1/2 transform -translate-x-[50%] -translate-y-[50%] shadow-lg ">
           <div className=" overflow-y-scroll max-h-[80vh] no-scrollbar ">
-            {/* close button */}
             <BsXCircle
               onClick={() => setIsOpen(false)}
               className="text-7xl cursor-pointer  absolute right-2 -top-12 md:-right-10 md:-top-6 z-50  text-white transition transform hover:rotate-45 duration-300 ease-in-out "
@@ -146,7 +142,6 @@ const Works = () => {
           </div>
         </div>
       </Modal>
-      {/* End Modal for portfolio items */}
     </>
   );
 };

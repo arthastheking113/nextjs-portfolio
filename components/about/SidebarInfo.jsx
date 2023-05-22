@@ -13,7 +13,6 @@ const SidebarInfo = () => {
         className="w-[240px] absolute left-[50%] transform -translate-x-[50%] h-[240px] drop-shadow-xl mx-auto  rounded-[20px] -mt-[140px]"
         alt="avatar"
       />
-      {/* Social card */}
       <div className="pt-[100px] pb-8">
         <h1 className="mt-6 mb-1 text-5xl font-semibold  dark:text-white">
           Duy Lan Le
@@ -22,13 +21,11 @@ const SidebarInfo = () => {
           Software Engineer
         </h3>
 
-        {/* Social Links */}
 
         <div className="flex justify-center space-x-3">
           <Social />
         </div>
 
-        {/* personal information */}
         <div className="p-7 rounded-2xl mt-7  bg-[#F3F6F6] dark:bg-[#1D1D1D]">
           <Info />
         </div>

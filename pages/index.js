@@ -5,51 +5,48 @@ import SidebarInfo from "../components/about/SidebarInfo";
 import HeaderNavigation from "../components/header/HeaderNavigation";
 import Header from "../components/header/Header";
 
-const MainRoot = () => {
+const HomePage = () => {
   const Service = dynamic(() => import("../components/service/Service"), {
     ssr: false,
   });
   const ResumeCardTwo = dynamic(() => import("../components/Resume/ResumeCard"), {
     ssr: false,
   });
-  
+
   const Skills = dynamic(() => import("../components/skills/Skills"), {
     ssr: false,
   });
-  
+
   const Works = dynamic(() => import("../components/works/Works"), {
     ssr: false,
   });
-  
+
   const Address = dynamic(() => import("../components/contact/Address"), {
     ssr: false,
   });
-  
+
   const Footer = dynamic(() => import("../components/footer/Footer"), {
     ssr: false,
   });
-  
+
   const ContactForm = dynamic(() => import("../components/contact/ContactForm"), {
     ssr: false,
   });
-  
+
   const ScrollToTop = dynamic(() => import("../components/footer/ScrollToTop"), {
     ssr: false,
   });
-  
+
   return (
     <section className="bg-homeBg min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark:bg-homeTwoBg-dark  md:pb-16 w-full">
       <Seo />
-      {/* End Head for Seo */}
 
       <Header />
-      {/* End header */}
 
       <div className="container grid grid-cols-12 md:gap-10 justify-between lg:mt-[220px]">
         <div className="col-span-12 lg:col-span-4  lg:h-screen lg:sticky top-44">
           <SidebarInfo />
         </div>
-        {/* profile sidebar */}
 
         <div className="col-span-12 lg:col-span-8 ">
           <HeaderNavigation />
@@ -57,7 +54,6 @@ const MainRoot = () => {
           <div className="rounded-2xl bg-white dark:bg-[#111111]">
             <div>
               <Intro />
-              {/* End about descriptions */}
 
               <section className="pb-12 px-5 sm:px-5 md:px-10 lg:px-14 ">
                 <h3 className="text-[35px] dark:text-white font-medium pb-5">
@@ -67,7 +63,6 @@ const MainRoot = () => {
                   <Service />
                 </div>
               </section>
-              {/* service provide end */}
 
               <section className="px-5 sm:px-5 md:px-10 lg:px-14">
                 <h3 id="#resume" className="text-[35px] dark:text-white font-medium mb-5">
@@ -108,18 +103,14 @@ const MainRoot = () => {
                 </div>
               </section>
               <Footer />
-              {/* Common Footer call here */}
             </div>
-            {/* End fade */}
           </div>
-          {/* End common-wrap */}
         </div>
       </div>
-      {/* End main continer */}
       <ScrollToTop />
     </section>
   );
 };
 
-export default MainRoot;
+export default HomePage;
 

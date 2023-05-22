@@ -12,7 +12,7 @@ export default function Document() {
           name="description"
           content="Duy Lan Le - Portfolio"
         />
-        <meta content="duy lan le portfolio" name="description"/>
+        <meta content="duy lan le portfolio" name="description" />
         <meta content="duy lan le" name="keywords" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />

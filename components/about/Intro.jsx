@@ -3,8 +3,6 @@ const Intro = () => {
     <>
       <div className="pt-12 md:py-12 px-5 sm:px-7 md:px-10 lg:px-14">
         <h2 id="#home" className="after-effect after:left-52">About Me</h2>
-        {/* About page title */}
-
         <div className="lg:grid grid-cols-12 md:gap-10 pt-4 md:pt-[30px] items-center  ">
           <div className="col-span-12 space-y-2.5">
             <div className="lg:mr-16">
@@ -21,7 +19,6 @@ const Intro = () => {
           </div>
         </div>
       </div>
-      {/* End pt-12 */}
     </>
   );
 };

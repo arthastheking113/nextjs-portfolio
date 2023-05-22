@@ -20,7 +20,6 @@ const Header = () => {
   return (
     <div className="container w-full bg-[#F3F6F6] dark:bg-black lg:bg-transparent lg:dark:bg-transparent flex justify-between py-5  lg:px-0 lg:pt-[50px]">
       <div className="w-full flex justify-between h-full px-4">
-        {/* website logo */}
 
         <a className="my-auto ">
           <Image
@@ -32,7 +31,6 @@ const Header = () => {
             alt="logo"
           />
         </a>
-        {/* start mobile menu toggle and mode btn */}
         <div className="flex items-center">
           <DarkMode />
           <DarkModeMobile />
@@ -52,12 +50,9 @@ const Header = () => {
             </span>
           )}
         </div>
-        {/* End mobile menu toggle and mode btn */}
       </div>
 
-      {/* mobile nav menu start */}
       <nav className={`${menuOpen ? "block lg:hidden" : "hidden"}`}>
-        {/* Menu items start  */}
         <ul
           className={`${
             menuOpen
@@ -81,9 +76,7 @@ const Header = () => {
             </li>
           ))}
         </ul>
-        {/* Menu items end  */}
       </nav>
-      {/* End mobile nav menu end */}
     </div>
   );
 };

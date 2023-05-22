@@ -73,7 +73,6 @@ const CommonContact = ({ condition }) => {
         </span>
       </h3>
 
-      {/* Form Start */}
       <form id="myForm" ref={form} onSubmit={sendEmail}>
         <div className="relative z-0 w-full mt-[40px] mb-8 group">
           <input
@@ -91,7 +90,6 @@ const CommonContact = ({ condition }) => {
             Name *
           </label>
         </div>
-        {/* End single block */}
 
         <div className="relative z-0 w-full mb-8 group">
           <input
@@ -109,7 +107,6 @@ const CommonContact = ({ condition }) => {
             Email *
           </label>
         </div>
-        {/* End single block */}
 
         <div className="relative z-0 w-full mb-8 group">
           <input
@@ -129,7 +126,6 @@ const CommonContact = ({ condition }) => {
           <input readOnly className="invisible form-control" type="text" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" value="New Email from Portfolio" data-msg="Please enter at least 8 chars of subject" required/>
 
         </div>
-        {/* End single block */}
 
         {isSubmit && 
           <div className="transition-all duration-300  ease-in-out inline-block rounded-lg  mt-3">
@@ -152,9 +148,6 @@ const CommonContact = ({ condition }) => {
             </div>
         }
         
-
-
-        {/* End single block */}
       </form>
     </div>
   );

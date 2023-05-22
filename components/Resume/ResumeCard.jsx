@@ -14,7 +14,6 @@ const ResumeCardTwo = () => {
               {item.title}
             </h4>
           </div>
-          {/* end flex */}
 
           {item.items.map((singleItem) => (
             <div
