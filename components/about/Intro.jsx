@@ -1,7 +1,7 @@
 const Intro = () => {
   return (
     <>
-      <div className="pt-12 md:py-12 px-2 sm:px-5 md:px-10 lg:px-14">
+      <div className="pt-12 md:py-12 px-5 sm:px-7 md:px-10 lg:px-14">
         <h2 id="#home" className="after-effect after:left-52">About Me</h2>
         {/* About page title */}
 

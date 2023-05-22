@@ -30,12 +30,12 @@ const MainRoot = () => {
         <div className="col-span-12 lg:col-span-8 ">
           <HeaderNavigation />
 
-          <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">
+          <div className="rounded-2xl bg-white dark:bg-[#111111]">
             <div data-aos="fade">
               <Intro />
               {/* End about descriptions */}
 
-              <section className="pb-12 px-2 sm:px-5 md:px-10 lg:px-14 ">
+              <section className="pb-12 px-5 sm:px-5 md:px-10 lg:px-14 ">
                 <h3 className="text-[35px] dark:text-white font-medium pb-5">
                   What I do!
                 </h3>
@@ -45,7 +45,7 @@ const MainRoot = () => {
               </section>
               {/* service provide end */}
 
-              <section className="px-2 sm:px-5 md:px-10 lg:px-14">
+              <section className="px-5 sm:px-5 md:px-10 lg:px-14">
                 <h3 id="#resume" className="text-[35px] dark:text-white font-medium mb-5">
                   Resume
                 </h3>
@@ -54,7 +54,7 @@ const MainRoot = () => {
                 </div>
               </section>
 
-              <section className="px-2 sm:px-5 md:px-10 lg:px-14">
+              <section className="px-5 sm:px-5 md:px-10 lg:px-14">
                 <h3 id="#skill" className="text-[35px] dark:text-white font-medium mb-5">
                   Skills
                 </h3>
@@ -63,7 +63,7 @@ const MainRoot = () => {
                 </div>
               </section>
 
-              <section className="px-2 py-10 sm:px-5 md:px-10 lg:px-14">
+              <section className="px-5 py-10 sm:px-5 md:px-10 lg:px-14">
                 <h3 id="#project" className="text-[35px] dark:text-white font-medium">
                   Projects
                 </h3>
@@ -72,7 +72,7 @@ const MainRoot = () => {
                 </div>
               </section>
 
-              <section className="px-2 sm:px-5 md:px-10 lg:px-14">
+              <section className="px-5 sm:px-5 md:px-10 lg:px-14">
                 <h3 id="#contact" className="text-[35px] dark:text-white font-medium">
                   Contact
                 </h3>
