@@ -7,10 +7,16 @@ import DarkModeMobile from "../mode/DarkModeMobile";
 import headerMenu from "../../data/HeaderMenu";
 import { isActiveLink } from "../../utilis/linkActiveChecker";
 import { useRouter } from "next/router";
+import { ScrollTo } from "../../utilis/scrollTo";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+
+  const goTo = (id) => {
+    ScrollTo(id);
+    setMenuOpen(false);
+  }
 
   return (
     <div className="container w-full bg-[#F3F6F6] dark:bg-black lg:bg-transparent lg:dark:bg-transparent flex justify-between py-5  lg:px-0 lg:pt-[50px]">
@@ -62,17 +68,17 @@ const Header = () => {
         >
           {headerMenu.map((item) => (
             <li key={item.id} className="mb-1">
-              <Link
+              <a
                 className={`${
                   isActiveLink(item.routePath, router.asPath)
                     ? "rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] text-white linked bg-gradient-to-r "
                     : "rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6]"
                 } `}
-                href={item.routePath}
+                onClick={() => goTo(item.routePath)}
               >
                 <span className="mr-2 text-xl">{item.icon}</span>
                 {item.name}
-              </Link>
+              </a>
             </li>
           ))}
         </ul>
