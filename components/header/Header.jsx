@@ -14,12 +14,12 @@ const Header = () => {
 
   return (
     <div className="container w-full bg-[#F3F6F6] dark:bg-black lg:bg-transparent lg:dark:bg-transparent flex justify-between py-5  lg:px-0 lg:pt-[50px]">
-      <div className="w-full flex justify-between  px-4">
+      <div className="w-full flex justify-between h-full px-4">
         {/* website logo */}
 
-        <Link href="/">
+        <Link href="/" className="my-auto ">
           <Image
-            className="h-[26px] lg:h-[32px]"
+            className="h-[24px] lg:h-[24px] m-auto"
             width={153}
             height={26}
             priority
