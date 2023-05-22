@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { useState } from "react";
 import DarkMode from "../mode/DarkMode";
@@ -23,7 +22,7 @@ const Header = () => {
       <div className="w-full flex justify-between h-full px-4">
         {/* website logo */}
 
-        <Link href="/" className="my-auto ">
+        <a className="my-auto ">
           <Image
             className="h-[24px] lg:h-[24px] m-auto"
             width={153}
@@ -32,7 +31,7 @@ const Header = () => {
             src="/images/logo/logo.png"
             alt="logo"
           />
-        </Link>
+        </a>
         {/* start mobile menu toggle and mode btn */}
         <div className="flex items-center">
           <DarkMode />

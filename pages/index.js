@@ -15,7 +15,7 @@ import ContactForm from "../components/contact/ContactForm";
 const MainRoot = () => {
   return (
     <section className="bg-homeBg min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark:bg-homeTwoBg-dark  md:pb-16 w-full">
-      <Seo pageTitle="Home" />
+      <Seo />
       {/* End Head for Seo */}
 
       <Header />
@@ -31,7 +31,7 @@ const MainRoot = () => {
           <HeaderNavigation />
 
           <div className="rounded-2xl bg-white dark:bg-[#111111]">
-            <div data-aos="fade">
+            <div>
               <Intro />
               {/* End about descriptions */}
 

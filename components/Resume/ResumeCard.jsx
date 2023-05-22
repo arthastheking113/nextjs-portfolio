@@ -2,7 +2,7 @@ import { useTheme } from "next-themes";
 import resumeData from "../../data/resumeData";
 
 const ResumeCardTwo = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <>

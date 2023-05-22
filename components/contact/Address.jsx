@@ -3,7 +3,7 @@ import Image from "next/image";
 import addressData from "../../data/addressData";
 
 const Address = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   return (
     <>

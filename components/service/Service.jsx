@@ -3,7 +3,7 @@ import Image from "next/image";
 import serviceData from "../../data/serviceData";
 
 const Service = () => {
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
   return (
     <>
       {serviceData.map((item) => (

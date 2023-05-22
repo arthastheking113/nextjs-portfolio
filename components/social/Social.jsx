@@ -1,8 +1,5 @@
 import {
-  FaDribbble,
-  FaFacebookF,
   FaLinkedinIn,
-  FaTwitter,
   FaGithub
 } from "react-icons/fa";
 

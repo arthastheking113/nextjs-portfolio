@@ -3,11 +3,11 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 
 const Skills = () => {
-    const { theme, setTheme } = useTheme();
+    const { theme } = useTheme();
     return (
     <>
-      {skillsData.map((item) => (
-        <div key={item.id}>
+      {skillsData.map((item, key) => (
+        <div key={key}>
             <div className="flex items-center space-x-2 mb-4">
                 <div className="text-6xl text-[#F95054]">{item.icon}</div>
                 <h4 className="text-5xl dark:text-white font-medium">
@@ -22,11 +22,11 @@ const Skills = () => {
                     }`,
                 }}
             >
-                {item.items.map((singleItem, key) => (
+                {item.items.map((singleItem, singleKey) => (
                     <Image 
                     alt={singleItem.alt} 
                     className="h-full w-full w-20 p-1 object-fill rounded-lg" 
-                    key={singleItem.id} 
+                    key={singleKey} 
                     src={singleItem.img}
                     width={72}
                     height={72}

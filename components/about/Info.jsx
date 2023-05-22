@@ -1,5 +1,4 @@
 import {
-  FaCalendarAlt,
   FaEnvelopeOpenText,
   FaMapMarkerAlt,
   FaMobileAlt,
@@ -8,7 +7,6 @@ import {
 const Info = () => {
   const personalContent = [
     {
-      id: 1,
       border: "border-b border-[#E3E3E3] dark:border-[#3D3A3A]",
       icon: <FaMobileAlt />,
       iconColor: "text-[#E93B81]",
@@ -25,7 +23,6 @@ const Info = () => {
       ),
     },
     {
-      id: 2,
       border: "border-b border-[#E3E3E3] dark:border-[#3D3A3A]",
       icon: <FaMapMarkerAlt />,
       iconColor: "text-[#6AB5B9] ",
@@ -33,7 +30,6 @@ const Info = () => {
       meta: <>Maryland, USA</>,
     },
     {
-      id: 3,
       border: "border-b border-[#E3E3E3] dark:border-[#3D3A3A]",
       icon: <FaEnvelopeOpenText />,
       iconColor: "text-[#FD7590]",
@@ -54,8 +50,8 @@ const Info = () => {
 
   return (
     <>
-      {personalContent.map((item) => (
-        <div className={`flex py-2.5 ${item.border}`} key={item.id}>
+      {personalContent.map((item, key) => (
+        <div className={`flex py-2.5 ${item.border}`} key={key}>
           <span
             className={`flex-shrink-0 socialbtn bg-white dark:bg-black ${item.iconColor} shadow-md`}
           >

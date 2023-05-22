@@ -1,10 +1,10 @@
 import Image from "next/image";
-import { FiUser, FiCode, FiFilePlus, FiExternalLink } from "react-icons/fi";
+import { FiCode, FiFilePlus, FiExternalLink } from "react-icons/fi";
 import { BsXCircle } from "react-icons/bs";
 import Masonry from "react-masonry-css";
 import Modal from "react-modal";
 import portfolioData from "../../data/worksData";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useTheme } from "next-themes";
 
 Modal.setAppElement("#__next");
@@ -18,7 +18,7 @@ const Works = () => {
 
   const [singleData, setSingleData] = useState({});
   const [isOpen, setIsOpen] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { theme } = useTheme();
 
   const handlePortfolioData = (id) => {
     const find = portfolioData.find((item) => item?.id === id);

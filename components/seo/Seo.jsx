@@ -1,11 +1,9 @@
 import Head from "next/head";
 
-const Seo = ({ pageTitle }) => (
+const Seo = () => (
   <>
     <Head>
       <title>
-        {/* {pageTitle &&
-          `${pageTitle} || Duy Lan Le - Portfolio`} */}
           Duy Lan Le - Software Engineer Portfolio
       </title>
       <meta content="I'm Duy Lan Le and a Software Engineer" name="description"/>
