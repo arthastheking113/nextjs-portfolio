@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import { MdOutlineLanguage, MdCloud } from "react-icons/md";
 import { FaAward, FaTools } from "react-icons/fa";
-import {TbTestPipe } from "react-icons/tb"
+import { TbTestPipe } from "react-icons/tb"
 
 const Skills = () => {
     const { theme } = useTheme();
@@ -192,6 +192,7 @@ const Skills = () => {
                     <a 
                     href={singleItem.link}
                     target="_blank"
+                    key={singleKey}
                     >
                         <Image 
                         alt={singleItem.alt} 
