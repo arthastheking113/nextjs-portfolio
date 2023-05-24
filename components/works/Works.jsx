@@ -3,7 +3,6 @@ import { FiCode, FiFilePlus, FiExternalLink } from "react-icons/fi";
 import { BsXCircle } from "react-icons/bs";
 import Masonry from "react-masonry-css";
 import Modal from "react-modal";
-import portfolioData from "../../data/worksData";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 
@@ -19,6 +18,70 @@ const Works = () => {
   const [singleData, setSingleData] = useState({});
   const [isOpen, setIsOpen] = useState(false);
   const { theme } = useTheme();
+
+  const portfolioData = [,
+    {
+      id: "1",
+      tag: "Web Application",
+      title: "YGO Viet Nam",
+      img: "/images/work_images/ygovietnam.png",
+      imgSmall: "/images/work_images/ygovietnam.png",
+      bg: "#FEFAF0",
+      client: "Themeforest",
+      langages: "Blazor",
+      link: "https://ygovietnam.com/",
+      linkText: "ygovietnam.com",
+      github: "https://github.com/arthastheking113",
+      githubText: "N/A (Private)",
+      description:
+        " Card game information website written in Blazor.",
+    },
+    {
+      id: "2",
+      tag: "Web Application",
+      title: "Ecommerce",
+      img: "/images/work_images/market.png",
+      imgSmall: "/images/work_images/market.png",
+      bg: "#FFF3FC",
+      langages: "Blazor",
+      link: "/",
+      linkText: "N/A",
+      github: "https://github.com/arthastheking113/BlazorStore",
+      githubText: "BlazorStore",
+      description:
+        "  Ecommerce website written in Blazor",
+    },
+    {
+      id: "3",
+      tag: "Web Application",
+      title: "Interview Question Library",
+      img: "/images/work_images/interview-library.png",
+      imgSmall: "/images/work_images/interview-library.png",
+      bg: "#FFF0F0",
+      langages: "NextJS",
+      link: "https://interview-question-library.vercel.app/",
+      linkText: "Interview Question Library",
+      github: "https://github.com/arthastheking113/interview-question-library",
+      githubText: "interview-question-library",
+      description:
+        "  Website help interviewer can create multiple question and attach them into a position for future interview",
+    },
+    {
+      id: "4",
+      tag: "Web Application",
+      title: "Astro Blog Template",
+      img: "/images/work_images/astro-blog.png",
+      imgSmall: "/images/work_images/astro-blog.png",
+      bg: "#E9FAFF",
+      langages: "AstroJS",
+      link: "https://inquisitive-pixie-d9e921.netlify.app/",
+      linkText: "Astro Blog Template",
+      github: "https://github.com/arthastheking113/astro-blog-template",
+      githubText: "astro-blog-template",
+      description:
+        "  A static site generation for markdown documentation written in AstroJS ",
+    }
+  ];
 
   const handlePortfolioData = (id) => {
     const find = portfolioData.find((item) => item?.id === id);

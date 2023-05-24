@@ -5,7 +5,7 @@ import SidebarInfo from "../components/about/SidebarInfo";
 import HeaderNavigation from "../components/header/HeaderNavigation";
 import Header from "../components/header/Header";
 import Service from "../components/service/Service";
-import ResumeCardTwo from "../components/Resume/ResumeCard";
+import ResumeCard from "../components/Resume/ResumeCard";
 import Skills from "../components/skills/Skills";
 import Works from "../components/works/Works";
 import Address from "../components/contact/Address";
@@ -47,7 +47,7 @@ const HomePage = () => {
                   Resume
                 </h3>
                 <div className=" max-w-full h-auto rounded-xl">
-                  <ResumeCardTwo />
+                  <ResumeCard />
                 </div>
               </section>
 

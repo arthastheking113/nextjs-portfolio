@@ -6,13 +6,11 @@ import {
 const Social = () => {
   const socialContent = [
     {
-      id: 1,
       link: "https://github.com/arthastheking113",
       icon: <FaGithub />,
       iconClass: "",
     },
     {
-      id: 2,
       link: "https://www.linkedin.com/in/duy-lan-le-445262163/",
       icon: <FaLinkedinIn />,
       iconClass: "text-[#0072b1]",
@@ -21,12 +19,12 @@ const Social = () => {
 
   return (
     <>
-      {socialContent.map((item) => (
+      {socialContent.map((item, key) => (
         <a
           href={item.link}
           target="_blank"
           rel="noopener noreferrer"
-          key={item.id}
+          key={key}
         >
           <span className={`socialbtn ${item.iconClass}`}>{item.icon}</span>
         </a>

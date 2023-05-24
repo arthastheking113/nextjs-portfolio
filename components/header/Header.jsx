@@ -1,16 +1,47 @@
 import Image from "next/image";
-import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenu, AiOutlineClose, AiFillDatabase } from "react-icons/ai";
 import { useState } from "react";
 import DarkMode from "../mode/DarkMode";
 import DarkModeMobile from "../mode/DarkModeMobile";
-import headerMenu from "../../data/HeaderMenu";
 import { isActiveLink } from "../../utilis/linkActiveChecker";
 import { useRouter } from "next/router";
 import { ScrollTo } from "../../utilis/scrollTo";
+import { CgNotes } from "react-icons/cg";
+import { FiCodesandbox } from "react-icons/fi";
+import { RiContactsBookLine } from "react-icons/ri";
+import { GiSkills } from "react-icons/gi";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const router = useRouter();
+
+  const headerMenu = [
+    {
+      name: "About",
+      routePath: "#home",
+      icon: <AiFillDatabase />,
+    },
+    {
+      name: "Resume",
+      routePath: "#resume",
+      icon: <CgNotes />,
+    },
+    {
+      name: "Skills",
+      routePath: "#skill",
+      icon: <GiSkills />,
+    },
+    {
+      name: "Works",
+      routePath: "#project",
+      icon: <FiCodesandbox />,
+    },
+    {
+      name: "Contact",
+      routePath: "#contact",
+      icon: <RiContactsBookLine />,
+    },
+  ];
 
   const goTo = (id) => {
     ScrollTo(id);
@@ -60,8 +91,8 @@ const Header = () => {
               : "flex my-12 "
           }`}
         >
-          {headerMenu.map((item) => (
-            <li key={item.id} className="mb-1">
+          {headerMenu.map((item, key) => (
+            <li key={key} className="mb-1">
               <a
                 className={`${
                   isActiveLink(item.routePath, router.asPath)
