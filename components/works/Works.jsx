@@ -34,7 +34,7 @@ const Works = () => {
       github: "https://github.com/arthastheking113",
       githubText: "N/A (Private)",
       description:
-        " Card game information website written in Blazor.",
+        " Card game information website written in Blazor and MAUI",
     },
     {
       id: "2",
