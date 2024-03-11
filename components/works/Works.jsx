@@ -23,14 +23,14 @@ const Works = () => {
     {
       id: "1",
       tag: "Web Application",
-      title: "YGO Viet Nam",
+      title: "Meta Duelist",
       img: "/images/work_images/ygovietnam.png",
       imgSmall: "/images/work_images/ygovietnam.png",
       bg: "#FEFAF0",
       client: "Themeforest",
-      langages: "Blazor",
-      link: "https://ygovietnam.com/",
-      linkText: "ygovietnam.com",
+      langages: "C#, Blazor, MAUI",
+      link: "https://metaduelist.com/",
+      linkText: "metaduelist.com",
       github: "https://github.com/arthastheking113",
       githubText: "N/A (Private)",
       description:
@@ -196,8 +196,8 @@ const Works = () => {
               className="w-full md:h-[450px]  h-auto object-cover rounded-xl mt-6"
               src={singleData?.img}
               alt="blog details image"
-              width={620}
-              height={420}
+              width={1200}
+              height={900}
               loading="lazy"
             />
           </div>
