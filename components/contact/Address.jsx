@@ -47,7 +47,7 @@ const Address = () => {
       title: "Address ",
       info: (
         <p className="text-gray-lite text-lg dark:text-[#A6A6A6] ">
-          Maryland, USA
+          Texas, USA
         </p>
       ),
       bg: "#F2F4FF",

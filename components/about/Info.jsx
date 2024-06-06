@@ -27,7 +27,7 @@ const Info = () => {
       icon: <FaMapMarkerAlt />,
       iconColor: "text-[#6AB5B9] ",
       name: "Location",
-      meta: <>Maryland, USA</>,
+      meta: <>Texas, USA</>,
     },
     {
       border: "border-b border-[#E3E3E3] dark:border-[#3D3A3A]",
