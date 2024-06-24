@@ -23,13 +23,7 @@ const ResumeCard = () => {
       icon: <MdOutlineSchool />,
       items: [
         {
-          date: "AUGUST 2023 - PRESENT",
-          title: ".NET Core Developer/ Senior Analyst",
-          place: "Easy Dynamics",
-          bg: "#F2F4FF",
-        },
-        {
-          date: "JANUARY 2022 - AUGUST 2023",
+          date: "JANUARY 2022 - PRESENT",
           title: "Software Engineer 2",
           place: "Maxim Healthcare Staffing",
           bg: "#F2F4FF",
