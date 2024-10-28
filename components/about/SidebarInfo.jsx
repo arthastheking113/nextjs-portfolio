@@ -14,10 +14,10 @@ const SidebarInfo = () => {
         alt="avatar"
       />
       <div className="pt-[100px] pb-8">
-        <h1 className="mt-6 mb-1 text-5xl font-semibold  dark:text-white">
+        <h1 className="mt-3 mb-1 text-5xl font-semibold  dark:text-white">
           Duy Lan Le
         </h1>
-        <h3 className="mb-4 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]  ">
+        <h3 className="mb-3 text-[#7B7B7B] inline-block dark:bg-[#1D1D1D] px-5 py-1.5 rounded-lg dark:text-[#A6A6A6]  ">
           Software Engineer
         </h3>
 
@@ -26,14 +26,14 @@ const SidebarInfo = () => {
           <Social />
         </div>
 
-        <div className="p-7 rounded-2xl mt-7  bg-[#F3F6F6] dark:bg-[#1D1D1D]">
+        <div className="p-7 rounded-2xl mt-4  bg-[#F3F6F6] dark:bg-[#1D1D1D]">
           <Info />
         </div>
 
         <a
           href="/images/Lan - Resume.pdf"
           download
-          className="inline-flex items-center mx-auto bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-6"
+          className="inline-flex items-center mx-auto bg-gradient-to-r from-[#FA5252] to-[#DD2476] duration-200 transition ease-linear hover:bg-gradient-to-l from-[#DD2476]  to-[#fa5252ef] px-8 py-3 text-lg text-white rounded-[35px] mt-4"
         >
           <img src="/images/download.png" alt="icon" className="mr-2" />
           Download Resume
