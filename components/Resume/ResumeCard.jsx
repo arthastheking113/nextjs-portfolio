@@ -23,29 +23,35 @@ const ResumeCard = () => {
       icon: <MdOutlineSchool />,
       items: [
         {
-          date: "JANUARY 2022 - PRESENT",
+          date: "MAR 2022 - PRESENT",
           title: "Software Engineer 2",
           place: "Maxim Healthcare Staffing",
           bg: "#F2F4FF",
         },
         {
-          date: "JUNE 2021 - DECEMBER 2021",
+          date: "JAN 2021 - MAR 2022",
+          title: "Software Engineer",
+          place: "National Institute of Standards and Technology",
+          bg: "#EEF5FA",
+        },
+        {
+          date: "JUNE 2020 - DECEMBER 2020",
           title: ".Net Developer",
           place: "BrightKey",
           bg: "#EEF5FA",
         },
   
         {
-          date: "JANUARY 2021 - MAY 2021",
+          date: "JANUARY 2020 - MAY 2020",
           title: "Full Stack .NET Developer",
           place: "Coder Foundry",
           bg: "#F2F4FF",
         },
   
         {
-          date: "MARCH 2019 - DECEMBER 2020",
+          date: "MARCH 2018 - DECEMBER 2019",
           title: "Full Stack .NET/Web Developer",
-          place: "DLSolution",
+          place: "DL Solutions",
           bg: "#EEF5FA",
         },
       ],
