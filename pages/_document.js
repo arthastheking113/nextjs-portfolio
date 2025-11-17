@@ -1,8 +1,8 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
-  const title = "Duy Lan Le - Software Engineer Portfolio";
-  const description = "I'm Duy Lan Le and a Software Engineer";
+  const title = "Lan Le - Software Engineer Portfolio";
+  const description = "I'm Lan Le and a Software Engineer";
   const image = "/images/about/avatar.jpg";
   return (
     <Html lang="en">
@@ -28,7 +28,7 @@ export default function Document() {
         <meta name="twitter:title" content={title}/>
         <meta name="twitter:description" content={description}/>
         <meta name="twitter:image" content={image}/>
-        <meta content="duy lan le, software engineer, lan le, arthastheking113@gmail.com, lanle97work@gmail.com" name="keywords" />
+        <meta content="lan le, duy lan le, software engineer, arthastheking113@gmail.com, lanle97work@gmail.com" name="keywords" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
